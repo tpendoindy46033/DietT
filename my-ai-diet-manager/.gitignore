@@ -1,0 +1,10 @@
+node_modules/
+dist-frontend/
+deploy-folder/
+.env
+.env.local
+*.log
+.DS_Store
+.wrangler/
+coverage/
+*.tsbuildinfo

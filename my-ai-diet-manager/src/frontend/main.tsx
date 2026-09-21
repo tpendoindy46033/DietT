@@ -1,0 +1,21 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { App } from "./App";
+import { RouterProvider } from "./lib/router";
+import { ToastProvider } from "./lib/ToastContext";
+import "./styles/tokens.css";
+import "./styles/base.css";
+import "./styles/components.css";
+
+const container = document.getElementById("root");
+if (!container) throw new Error("Root element not found");
+
+createRoot(container).render(
+  <StrictMode>
+    <RouterProvider>
+      <ToastProvider>
+        <App />
+      </ToastProvider>
+    </RouterProvider>
+  </StrictMode>
+);
